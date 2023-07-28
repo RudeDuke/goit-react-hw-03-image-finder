@@ -1,0 +1,29 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  padding-bottom: 24px;
+}
+
+.ScrollToTopArrow {
+  position: fixed;
+  top: 120px;
+  right: 30px;
+  font-size: 40px;
+  color: #3f51b5;
+  cursor: pointer;
+}
+
+.ScrollToBottomArrow {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  font-size: 40px;
+  color: #3f51b5;
+  cursor: pointer;
+}
+
+.ScrollToTopArrow:is(:hover, :focus),
+.ScrollToBottomArrow:is(:hover, :focus) {
+  color: #ff4081;
+}
